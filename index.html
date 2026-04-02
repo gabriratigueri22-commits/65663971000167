@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fazenda Albuquerque LTDA. Excelência em pecuária de corte e leite, comércio atacadista de animais e arrendamento de áreas rurais no Acre.">
+    <title>Fazenda Albuquerque | Agronegócio e Pecuária de Excelência</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root { --agro-green: #1A4A38; --agro-gold: #C5A059; --agro-brown: #5C3A21; --agro-light: #F4F6F4; }
+        body { font-family: 'Open Sans', sans-serif; background-color: var(--agro-light); color: #333; }
+        h1, h2, h3, .navbar-brand { font-family: 'Merriweather', serif; }
+        
+        /* Navbar Agro Premium */
+        .navbar { background: #fff; border-bottom: 4px solid var(--agro-green); padding: 15px 0; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        .navbar-brand { color: var(--agro-green) !important; font-size: 1.6rem; font-weight: 700; text-transform: uppercase; }
+        .navbar-brand i { color: var(--agro-gold); margin-right: 8px; }
+        .nav-link { font-weight: 600; color: #555; font-size: 0.9rem; text-transform: uppercase; margin: 0 10px; transition: 0.3s; }
+        .nav-link:hover { color: var(--agro-green); }
+
+        /* Hero: Imagem Forte de Pasto/Gado */
+        .hero { 
+            background: linear-gradient(rgba(26, 74, 56, 0.85), rgba(92, 58, 33, 0.7)), url('https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=1920&q=80') center/cover;
+            padding: 160px 0; color: white; text-align: center;
+        }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 20px; text-shadow: 2px 2px 8px rgba(0,0,0,0.5); }
+        .hero p { font-size: 1.2rem; max-width: 800px; margin: 0 auto 40px; color: #E8ECEB; }
+        .btn-agro { background: var(--agro-gold); color: #fff; border: none; padding: 14px 35px; font-weight: 700; text-transform: uppercase; border-radius: 4px; transition: 0.3s; }
+        .btn-agro:hover { background: #b08d4b; color: #fff; transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
+
+        /* Setores de Atuação (CNAEs) */
+        .sect-title { color: var(--agro-green); font-weight: 700; position: relative; padding-bottom: 15px; margin-bottom: 40px; display: inline-block; }
+        .sect-title::after { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 60px; height: 3px; background: var(--agro-gold); }
+        
+        .agro-card { background: #fff; border-radius: 8px; padding: 40px 30px; border: 1px solid #E0E5E2; text-align: center; height: 100%; transition: 0.4s; border-top: 5px solid transparent; }
+        .agro-card:hover { transform: translateY(-10px); border-top-color: var(--agro-gold); box-shadow: 0 15px 30px rgba(0,0,0,0.08); }
+        .agro-icon { font-size: 45px; color: var(--agro-green); margin-bottom: 20px; }
+        .agro-card h4 { font-size: 1.3rem; color: var(--agro-green); margin-bottom: 15px; }
+
+        /* Estrutura e Imóveis Rurais */
+        .real-estate { background: var(--agro-green); color: white; padding: 80px 0; }
+        .real-estate .img-box { border-radius: 8px; overflow: hidden; border: 4px solid rgba(255,255,255,0.1); }
+        .badge-gold { background: var(--agro-gold); color: #fff; padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; letter-spacing: 1px; }
+
+        /* Contato */
+        .contact-section { padding: 80px 0; background: #fff; }
+        .map-wrapper { height: 450px; border-radius: 8px; overflow: hidden; border: 1px solid #ccc; }
+        
+        footer { background: #11261B; color: #8A9C93; padding: 50px 0 20px; font-size: 0.9rem; }
+        footer h5 { color: #fff; font-family: 'Open Sans', sans-serif; font-weight: 700; margin-bottom: 20px; }
+        footer a { color: var(--agro-gold); text-decoration: none; }
+        footer a:hover { color: #fff; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fas fa-leaf"></i> FAZENDA ALBUQUERQUE</a>
+            <div class="ms-auto d-none d-lg-block">
+                <a href="#contato" class="btn btn-outline-success fw-bold px-4">FALAR COM COMERCIAL</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Tradição, Genética e Produtividade</h1>
+            <p>Um centro de excelência em pecuária no estado do Acre. Focados no desenvolvimento do agronegócio através da criação animal de alto padrão, soluções de apoio rural e gestão de áreas de pastagem.</p>
+            <a href="#negocios" class="btn btn-agro">CONHEÇA NOSSOS SETORES</a>
+        </div>
+    </section>
+
+    <section id="negocios" class="py-5">
+        <div class="container py-5 text-center">
+            <h2 class="sect-title">Áreas de Atuação</h2>
+            <div class="row g-4 mt-2">
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="agro-card">
+                        <i class="fas fa-cow agro-icon"></i>
+                        <h4>Pecuária Corte & Leite</h4>
+                        <p class="text-muted small">Manejo intensivo e seleção genética voltados para a alta produtividade de carne e laticínios, respeitando o bem-estar animal.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="agro-card">
+                        <i class="fas fa-truck-moving agro-icon"></i>
+                        <h4>Atacado de Animais</h4>
+                        <p class="text-muted small">Comercialização de lotes vivos para recria, engorda e abate. Fornecimento B2B seguro com rastreabilidade completa (GTA).</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="agro-card">
+                        <i class="fas fa-map-marked-alt agro-icon"></i>
+                        <h4>Arrendamento de Áreas</h4>
+                        <p class="text-muted small">Aluguel e gestão de imóveis próprios e infraestrutura rural para produtores, garantindo pastagens de alta qualidade na região.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="agro-card">
+                        <i class="fas fa-hands-helping agro-icon"></i>
+                        <h4>Apoio e Consultoria</h4>
+                        <p class="text-muted small">Serviços técnicos de apoio ao produtor, manejo sanitário, nutrição e consultoria para otimização de rebanhos terceiros.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="real-estate">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <span class="badge-gold mb-3">INFRAESTRUTURA RURAL</span>
+                    <h2 class="mb-4">Gestão de Propriedades e Arrendamento</h2>
+                    <p class="mb-4" style="color: #D1DED9;">Disponibilizamos amplas áreas de pastagem e infraestrutura de confinamento para locação. Nossos imóveis rurais no município de Feijó oferecem abundância hídrica, solo corrigido e fácil escoamento logístico.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-check text-warning me-2"></i> Contratos de arrendamento flexíveis</li>
+                        <li class="mb-2"><i class="fas fa-check text-warning me-2"></i> Áreas com licença ambiental regularizada</li>
+                        <li class="mb-2"><i class="fas fa-check text-warning me-2"></i> Estrutura de curral e balança inclusas</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <div class="img-box shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1595841696677-6489ff3f8cd1?auto=format&fit=crop&w=800&q=80" alt="Área Rural Fazenda" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contact-section">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-5">
+                    <h2 class="mb-4 text-dark">Contato Comercial</h2>
+                    <p class="text-muted mb-4">Negocie lotes de gado, solicite informações sobre arrendamento de áreas ou conheça nossos serviços de apoio pecuário.</p>
+                    
+                    <div class="d-flex align-items-start mb-4">
+                        <i class="fas fa-map-pin fs-4 text-success me-3 mt-1"></i>
+                        <div>
+                            <strong>Sede Administrativa:</strong><br>
+                            Rodovia 364, Km 0, Sala 01 - Área Rural<br>Feijó - AC, CEP: 69960-000
+                        </div>
+                    </div>
+
+                    <form onsubmit="event.preventDefault(); alert('Mensagem enviada. Nosso escritório entrará em contato.'); this.reset();">
+                        <input type="text" class="form-control mb-3 p-3" placeholder="Nome Completo / Fazenda" required>
+                        <input type="tel" class="form-control mb-3 p-3" placeholder="Telefone / WhatsApp" required>
+                        <select class="form-select mb-4 p-3">
+                            <option>Interesse Comercial...</option>
+                            <option>Compra de Lotes (Atacado)</option>
+                            <option>Arrendamento de Pastagem</option>
+                            <option>Serviços e Consultoria</option>
+                        </select>
+                        <button class="btn btn-agro w-100">SOLICITAR ATENDIMENTO</button>
+                    </form>
+                </div>
+                <div class="col-lg-7">
+                    <div class="map-wrapper">
+                        <iframe width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy" 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.3804899554474!2d-40.50523272421313!3d-9.390508591261314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x77370217f22f77b%3A0x6b3b5e43a6d4e2a!2sR.%20Santa%20Cec%C3%ADlia%2C%2020%20-%20Centro%2C%20Petrolina%20-%20PE%2C%2056304-470!5e0!3m2!1spt-BR!2sbr!4v1710790000000!5m2!1spt-BR!2sbr5"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h5>FAZENDA ALBUQUERQUE LTDA</h5>
+                    <p class="mb-1">CNPJ: 65.663.971/0001-67</p>
+                    <p>Feijó - Acre, Amazônia Ocidental</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <h5 class="mb-3">Transparência Institucional</h5>
+                    <a href="politicas.html">Sanidade e Políticas de Negócio</a><br>
+                    <a href="politicas.html">Termos de Arrendamento Rural</a>
+                </div>
+            </div>
+            <div class="text-center mt-5 pt-4 border-top border-secondary">
+                © 2026 Fazenda Albuquerque. Operação registrada e fiscalizada pelos órgãos competentes.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
